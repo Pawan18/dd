@@ -1,79 +1,34 @@
-#minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+title: "Pawan Poojary"
+author: "Pawan Poojary"
+description: "Northwestern University"
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
 
-# Site Settings
-locale                   : "en-US"
-title                    : "Pawan Poojary"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : ""
-description              : "An amazing website."
-url                      : "https://mmistakes.github.io"
+# Layout
 
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+show_excerpts: false        # show article excerpts on the home page
+show_frame: true           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+minimal: false             # use a dark header
+
+# Menu
+
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {title: "CV",  url: /cv/ }
+  - {title: "Publications" , url: "https://www.cdm.depaul.edu/"}
+  - {title: "About", file: "about.md" }
+
+
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Mail, icon: envelope, url: "mailto:ssamala1@depaul.edu"}
+  - {title: Github, icon: github, url: "https://github.com/SwetaSamala"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                :  "github-light" 
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+#  disqus_shortname: ""    # see https://disqus.com/
+#  isso_domain: ""         # see https://posativ.org/isso/
 
-# Site Author
-author:
-  name             : "Pawan Poojary"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Chicago"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  github           : "academicpages"
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
-  twitter          : "replacethistwitterhandle"
-
-  # Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-#title: Pawan Poojary
-#logo: 
-#description: Lhhhhhh
-#show_downloads: true
-#theme: jekyll-theme-minimal
+plugins:
+ - jekyll-feed
